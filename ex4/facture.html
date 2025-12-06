@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facture</title>
+    <link rel="stylesheet" href="facture.css">
+
+</head>
+<body>
+    <h1>Facture</h1>
+    <form id="frm">
+    <div>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom">
+        <small class="error"></small>
+    </div>
+    <div>
+        <label for="prenom">Preom</label>
+        <input type="text" id="prenom">
+        <small class="error"></small>
+    </div>
+        <table>
+            <tr>
+                <th>Produit</th>
+                <th>Prix unitaire</th>
+                <th>Quantité</th> 
+            </tr>
+            <tr>
+                <td>Clavier</td>
+                <td>
+                    <input type="number" id="prix_clavier" > 
+                    <small class="error"></small>
+                </td>
+                
+                <td>
+                    <input type="number" id="qt_clavier" > 
+                    <small class="error"></small>
+                </td>    
+            </tr>
+            <tr>
+                <td>Souris</td>
+                <td><input type="number" id="prix_souris" ><small class="error"></small> </td>
+                
+                <td><input type="number" id="qt_souris" ><small class="error"></small> </td>
+                
+            </tr>
+            <tr>
+                <td>Scanner</td>
+                <td><input type="number" id="prix_scanner" > <small class="error"></small></td>
+                
+                <td><input type="number" id="qt_scanner" ><small class="error"></small></td> 
+                
+            </tr>
+         
+        </table>
+        <div>
+            <input type="button" value="valider" id="btn_valider">
+            <input type="button" value="annuler" id="btn_annulerer">
+        </div>
+    </form>
+        <table id="res">  </table>
+    </div>
+    <script src="./facture.js" async></script>
+    
+</body>
+</html>
