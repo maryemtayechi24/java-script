@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Connexion</h2>
+        <p class="subtitle">Veuillez entrer vos identifiants</p>
+
+        <form>
+            <div class="radio-box">
+                <label class="radio-title">Connexion en tant que</label>
+                    <input type="radio" name="role" value="invité" id="invite">
+                    <label>Invité</label>
+                    <input type="radio" name="role" value="admin" id="admin">
+                    <label>Administrateur</label>
+                <br>
+                <small class="error"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="login">Login</label>
+                <input type="text" id="login">
+                <small class="error"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="pw">Mot de passe</label>
+                <input type="password" id="pw">
+                <small class="error"></small>
+            </div>
+            <button type="button" class="pay-btn" id="btn_login">Se connecter</button>
+        </form>
+        <script src="login.js"></script>
+    </div>
+
+</body>
+</html>
