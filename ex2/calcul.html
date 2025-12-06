@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Exemple</th>
+        <th>Résultat</th>
+      </tr>
+      <tr>
+        <td>
+          <form>
+            <div>
+              <label for="x">x</label>
+              <input type="number" id="x" />
+              <small class="error"></small>
+            </div>
+            <div>
+              <label for="y">y</label>
+              <input type="number" id="y" />
+              <small class="error"></small>
+            </div>
+            <div>
+              <label for="op">Opération</label>
+              <select id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <small class="error"></small>
+              </select>
+            </div>
+            <div>
+              <button type="button" onclick="calculer()">Calculer</button>
+              <button type="reset" onclick="init()">Annuler</button>
+            </div>
+          </form>
+        </td>
+        <td>
+            <span id="res"></span>
+        </td>
+      </tr>
+    </table>
+    <script src="java.js"></script>
+  </body>
+</html>
