@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom">
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom">
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <label for="sexe">Sexe</label>
+            <input type="radio" name="sexe" id="H">H
+            <input type="radio" name="sexe" id="F">F
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <label for="emploie">Sans emploi</label>
+            <input type="checkbox" id="emploie">
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="dateN">Date de naissance</label>
+            <input type="date" id="dateN">
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="lieu">Lieu de naissance</label>
+            <select id="lieu">
+                <option value="">-- veuillez choisir une ville --</option>
+                <option value="bizerte">Bizerte</option>
+                <option value="tunis">Tunis</option>
+                <option value="sousse">Sousse</option>
+                <option value="nabeul">Nabeul</option>
+            </select>
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <button type="button" onclick="afficher()">Afficher phrase</button>
+            <br>
+            <textarea id="phrase" cols="30" rows="10" readonly></textarea>
+        </div>
+    </form>
+
+    <script src="ctrl.js"></script>
+</body>
+</html>

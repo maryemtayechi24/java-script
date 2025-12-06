@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f2f5fa;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form {
+    width: 460px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+form::before {
+    content: "Contact us";
+    display: block;
+    background: #f72585;  
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 25px 20px;
+}
+
+ div {
+    padding: 5px 20px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: #333;
+    display: block;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #fafafa;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #f72585;
+    box-shadow: 0 0 6px rgba(247, 37, 133, 0.3);
+    background: #fff;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 6px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #333;
+}
+
+.error {
+    color: #e63946;
+    font-size: 13px;
+    margin-top: 4px;
+    height: 14px;
+}
